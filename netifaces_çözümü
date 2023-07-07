@@ -1,0 +1,39 @@
+"Could not build wheels for netifaces, which is required to install pyproject.toml-based projects" hatası,
+netifaces paketinin kurulumu sırasında ortaya çıkan bir sorunu işaret eder. Bu sorunu çözmek için aşağıdaki adımları
+takip edebilirsiniz:
+
+1-Öncelikle, netifaces paketinin bağımlılıklarını kurmanız gerekebilir. Bu, libffi-dev gibi bazı paketlerin sisteminizde 
+yüklü olması gerektiği anlamına gelir. İşletim sisteminize ve dağıtımınıza bağlı olarak, gerekli paketleri kurmanız gerekebilir.
+Örneğin, Ubuntu tabanlı bir sistem kullanıyorsanız, terminale aşağıdaki komutu girerek gerekli paketleri yükleyebilirsiniz:
+"""
+sudo apt-get install libffi-dev
+"""
+İşletim sisteminize özgü bağımlılıkları yüklemek için, ilgili belgelere başvurmanızı öneririm.
+
+
+2-Terminalde, aşağıdaki komutu kullanarak Python sanal ortamınızı etkinleştirin (eğer kullanıyorsanız):
+"""
+source <venv_name>/bin/activate
+"""
+<venv_name>, oluşturduğunuz sanal ortamın adıyla değiştirilmelidir.
+
+
+3-Ardından, netifaces paketini kurmak için aşağıdaki komutu kullanın:
+"""
+pip install netifaces
+"""
+Bu komut, netifaces paketini indirip kuracaktır.
+Eğer yine aynı hatayı alıyorsanız, Python ve pip sürümlerini kontrol etmek de faydalı olabilir.
+Aşağıdaki komutları kullanarak Python ve pip sürümlerini kontrol edebilirsiniz:
+"""
+python --version
+pip --version
+"""
+Python sürümü 3.6 veya daha yeni olmalıdır ve pip'in güncel bir sürümünü kullanmanız önerilir.
+Bu adımları takip ederek, netifaces paketinin başarılı bir şekilde kurulması ve hatanın çözülmesi
+gerekmektedir.
+
+
+
+
+
